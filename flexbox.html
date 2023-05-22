@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Some Web Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 2px;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic';
+
+        }
+            .menu-container {
+            display: flex;
+            color: #fff;
+            background-color: #5995DA;  /* Blue */
+            padding: 20px 0;
+            justify-content:center;
+            }
+
+            .header-container{
+                display: flex;
+                color: #2674cd;
+                background-color: #D6E9FE;
+                justify-content: center;
+            }
+
+            .header{
+                width: 900px;
+                height: 300px;
+                display: flex;
+                justify-content: space-between;
+                align-items:stretch;
+            }
+
+            .menu {
+                display: flex;
+                /*border: 1px solid #fff;*/  /* For debugging */
+                width: 500px;
+                justify-content: space-between;
+                        }
+
+            .links{
+                display: flex;
+                justify-content: flex-end;
+            }
+            
+            .login{
+                margin-left: 10px;
+            }
+
+            .social,
+            .logo,
+            .subscribe {
+            /*border: 1px solid #5995DA;*/
+            }
+
+            .photo-grid-container{
+                display: flex;
+                justify-content: center;
+            }
+
+            .photo-grid{
+                display: flex;
+                width: 1000px;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+                
+            }
+
+            .photo-grid-item {
+                
+                border: 1px solid #fff;
+                width: 300px;
+                height: 300px;
+                }
+
+            .footer{
+              display: flex;
+              justify-content: space-between;
+            }
+
+            .footer-item{
+              border: 1px solid #fff;
+              background-color: #5995DA;
+              height: 200px;
+              flex:1;
+            }
+
+            .footer-two{
+              flex: 1.5;
+              font-size: 80px;
+              padding: 50px;
+              font-family: Arial;
+            }
+    </style>
+  </head>
+  <body>
+    <div class='menu-container'>
+      <div class='menu'>
+        <div class='date'>Aug 14, 2016</div>
+        <div class="links">
+        <div class='signup'>Sign Up</div>
+        <div class='login'>Login</div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class='header-container'>
+        <div class='header'>
+          <div class='subscribe'>Subscribe &#9662;</div>
+          <div class='logo'><img src='./awesome-logo.svg'/></div>
+          <div class='social'><img src='./social-icons.svg'/></div>
+        </div>
+      </div>
+
+      <div class='photo-grid-container'>
+        <div class='photo-grid'>
+          <div class='photo-grid-item first-item'>
+            <img src='./one.svg'/>
+          </div>
+          <div class='photo-grid-item'>
+            <img src='./two.svg'/>
+          </div>
+          <div class='photo-grid-item'>
+            <img src='./three.svg'/>
+          </div>
+          <div class='photo-grid-item'>
+            <img src='./four.svg'/>
+          </div>
+          <div class='photo-grid-item last-item'>
+            <img src='./five.svg'/>
+          </div>
+        </div> 
+      </div>
+
+      <div class='footer'>
+        <div class='footer-item footer-one'></div>
+        <div class='footer-item footer-two'>THE END</div>
+        <div class='footer-item footer-three'></div>
+      </div>
+  </body>
+</html>
